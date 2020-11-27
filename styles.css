@@ -1,0 +1,51 @@
+*{
+	box-sizing: border-box;
+}
+
+body {
+	font-family: monospace;
+}
+
+h1{
+	text-align: center;
+	color: blue;
+}
+
+form {
+	border: 1px solid blue;
+	padding: 15px;
+	width: 800px;
+	margin: 0 auto;
+}
+
+.inputCajaPeque{
+	width: 50px;
+}
+
+.inputCaja{
+	width: 200px;
+}
+
+p {
+	margin-bottom: 25px;
+}
+
+p span{
+	width: 195px;
+	display: inline-block;
+}
+
+.carrito input{
+	width: calc(100% - 195px);
+	display: inline-block;
+}
+
+.formaPago{
+	/*margin-bottom: 50px;*/
+}
+
+.capas{
+	padding: 15px;
+	background-color: lightgray;
+	margin-bottom: 15px;
+}

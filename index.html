@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="codigo.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css"/>
+</head>
+<body>
+	<h1>CARRITO DE COMPRA</h1>
+	<form name="formulario">
+		<p>
+			<span>Nombre artículo:	</span><input class="inputCaja" type="text" name="cajaNombre" value=""/><span id="errorNombre"></span>
+		</p>
+
+		<p>
+			<span>Precio artículo:	</span><input class="inputCaja" type="text" name="cajaPrecio" value=""/><span id="errorPrecio"></span>
+		</p>
+
+		<p>
+			<span>Unidades: </span><input class="inputCajaPeque" type="number" name="unidades" value="1"/>
+		</p>
+
+		<p>
+			<input type="button" name="boton_anyadir" value="Añadir al carrito"/>
+		</p>
+
+		<p class="carrito">
+			<span>Artículos en el carrito: </span><input type="text" name="cajaArticulos" value=""/>
+		</p>
+
+		<p>
+			<span>Precio total del carrito:	</span><input type="text" name="cajaPrecioTotal" value="" placeholder="0"/>
+		</p>
+
+		<p class="formaPago">
+			Forma de pago:
+			<select name="formaPago">
+				<option value="seleccione">--Seleccione--</option>
+				<option value="tarjeta">Tarjeta</option>
+				<option value="efectivo">Efectivo</option>
+			</select>
+		</p>
+
+		<div id="capaTarjeta" class="capas">
+			Titular tarjeta: <input type="text" name="titular"/><br/><br/>
+			Número tarjeta:  <input type="text" name="numTarjeta"/><br/><br/>
+			CVV: 			 <input class="inputCajaPeque" type="text" name="cvv"/>
+		</div>
+
+		<div id="capaEfectivo" class="capas">
+			Importe efectivo: <input type="text" name="importe"/>
+		</div>
+
+		<p>
+			<input type="checkbox" name="condiciones" id="condiciones">
+			Aceptar las condiciones de compra
+		</p>
+
+		<p>
+			<input type="button" name="boton_imprimir" value="Imprimir">
+			<input type="button" name="boton_restablecer" value="Restablecer">
+		</p>
+	</form>
+</body>
+</html>
